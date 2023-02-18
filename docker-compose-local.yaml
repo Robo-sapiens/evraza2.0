@@ -9,7 +9,7 @@ services:
       - CLICKHOUSE_PASSWORD=clickhouse
       - CLICKHOUSE_DB=clickhouse
     ports:
-      - "5432:5432"
+      - "9000:9000"
     networks:
       - custom
 networks:
