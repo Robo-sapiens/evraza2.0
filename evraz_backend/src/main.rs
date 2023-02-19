@@ -10,10 +10,12 @@ use rdkafka::{
     message::BorrowedMessage,
     ClientConfig, Message,
 };
-use serde::Deserialize;
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 use tokio::net::{TcpListener, TcpStream};
 use tokio_tungstenite::{accept_async, tungstenite::Error};
+
+mod exgauster;
+mod mapper;
 
 // TODO 1. websocket
 // 2. clickhouse
